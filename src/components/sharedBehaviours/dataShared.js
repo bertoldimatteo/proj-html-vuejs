@@ -5,30 +5,37 @@ export default Vue.observable ({
         {
             navLink: 'Home',
             status: 'multiLink',
+            id: 1,
         },
         {
             navLink: 'Courses',
             status: 'multiLink',
+            id: 2,
         },
         {
             navLink: 'About Us',
             status: 'monoLink',
+            id: 3,
         },
         {
             navLink: 'News',
             status: 'multiLink',
+            id: 4,
         },
         {
             navLink: 'Pages',
             status: 'multiLink',
+            id: 5,
         },
         {
             navLink: 'Contact',
             status: 'monoLink',
+            id: 6,
         },
         {
             navLink: 'Purchase',
             status: 'monoLink',
+            id: 7,
         }
     ],
     data: [

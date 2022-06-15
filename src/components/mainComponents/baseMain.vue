@@ -4,15 +4,28 @@
             <div class="left-navbar">
                 <img src="../../assets/reference/img/theme_eduprime_logo.png" alt="">
             </div>
-            <div class="right-navbar"></div>
+            <div class="right-navbar">
+                <ul>
+                    <li v-for="link in dataShared.links" :key="link.id"><a href="#">{{link.navLink}}<i class="icon fa-solid fa-caret-down"></i></a></li>
+                </ul>
+                <button type="button">VIEW COURSES</button>
+            </div>
         </nav>
         <div class="background-wave"></div>
     </main>
 </template>
 
 <script>
+import dataShared from '../sharedBehaviours/dataShared.js';
+
 export default {
     name: 'baseMain',
+
+    data() {
+        return {
+            dataShared,
+        }
+    }
 }
 </script>
 
@@ -28,9 +41,16 @@ main {
 }
 nav {
     padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .left-navbar img {
     width: 300px;
+}
+.right-navbar {
+    display: flex;
+    align-items: center;
 }
 .background-wave {
     position: absolute;
@@ -40,5 +60,19 @@ nav {
     width: 100%;
     height: 175px;
     top: 710px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+li, button {
+    margin: 0 20px;
+}
+a {
+    text-decoration: none;
+}
+.icon {
+    margin: 0 5px;
 }
 </style>
