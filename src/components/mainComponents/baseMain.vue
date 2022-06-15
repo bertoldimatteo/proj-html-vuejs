@@ -11,12 +11,16 @@
                 <button class="btn" type="button">VIEW COURSES</button>
             </div>
         </nav>
+        <div class="hero">
+            <BlockTwoButtons v-for="element in dataShared.data.hero" :key="element.id" :info="element"/>
+        </div>
         <div class="background-wave"></div>
     </main>
 </template>
 
 <script>
 import dataShared from '../sharedBehaviours/dataShared.js';
+import blockTwoButtons from '../blockComponents/blockTwoButtons.vue';
 
 export default {
     name: 'baseMain',
@@ -24,6 +28,7 @@ export default {
     data() {
         return {
             dataShared,
+            blockTwoButtons,
         }
     }
 }

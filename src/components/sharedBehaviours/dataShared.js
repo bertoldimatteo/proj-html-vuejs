@@ -46,6 +46,7 @@ export default Vue.observable ({
                    paragraph: 'EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary school etc.',
                    firstButton: 'Search courses',
                    secondButton: 'Apply for university',
+                   id: 8,
                 }
             ]
         },
