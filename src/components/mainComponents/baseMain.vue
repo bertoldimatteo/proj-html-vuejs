@@ -11,6 +11,14 @@
                 </div>
             </div>
         </section>
+        <section class="second-section">
+            <div class="container-lg">
+                <h2>Faculties available ad EduPrime</h2>
+                    <div class="container-p">
+                        <p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
+                    </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -40,11 +48,11 @@ export default {
     background-position: right;
     height: 600px;
 }
-.container-lg {
+.first-section .container-lg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
+    padding: 180px 0;
     gap: 100px;
 }
 .book-icon {
@@ -52,5 +60,14 @@ export default {
 }
 .left-section img {
     width: 480px;
+}
+.second-section {
+    margin: 200px 0;
+}
+.second-section .container-lg {
+    text-align: center;
+}
+.second-section p {
+    color: var(--gray-seven);
 }
 </style>

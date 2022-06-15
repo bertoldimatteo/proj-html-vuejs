@@ -16,9 +16,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2 {
-    font-size: var(--font-xxl);
-}
 .mono-card > * {
     margin: 25px 0;
 }
