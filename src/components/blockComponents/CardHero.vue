@@ -8,8 +8,9 @@
 </template>
 
 <script>
+
 export default {
-    name: 'blockTwoButtons',
+    name: 'CardHero',
     props: {
         info: Object,
     }
