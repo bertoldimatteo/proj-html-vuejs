@@ -24,8 +24,14 @@ main {
     background-position: top;
     height: 880px;
     position: relative;
+    width: 100%;
 }
-
+nav {
+    padding: 50px;
+}
+.left-navbar img {
+    width: 300px;
+}
 .background-wave {
     position: absolute;
     background-image: url('../../assets/reference/img/Wave-1.png');
