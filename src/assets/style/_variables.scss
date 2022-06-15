@@ -26,6 +26,8 @@
 /*----------------
     DIMENSION
 ----------------*/
+    --container-xxs: 650px;
+    --container-xs: 700px;
     --container-sm: 980px;
     --container-md: 1220px;
     --container-lg: 1440px;
@@ -34,9 +36,9 @@
     FONT-SIZE
 ----------------*/
     --font-sm: .875rem;
-    --font-md: 1rem;
-    --font-lg: 1.125rem;
-    --font-xl: 1.25rem;
-    --font-xxl: 1.5rem;
-    --font-xxxl: 1.75rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.5625rem;
+    --font-xl: 1.875rem;
+    --font-xxl: 3.125rem;
+    --font-xxxl: 3.75rem;
 }

@@ -96,4 +96,9 @@ button {
 .monoLink {
     display: none;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
 </style>
