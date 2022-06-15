@@ -54,8 +54,9 @@ export default Vue.observable ({
             section1: [
                 {
                    title: 'Thousands of courses for any type of student',
-                   paragraph: "at EduPrime, it doesn't matter what domain you wish to pursue a carrer in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.",
+                   paragraph: "At EduPrime, it doesn't matter what domain you wish to pursue a carrer in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.",
                    firstButton: 'Browse through courses',
+                   id: 9,
                 }
             ]
         },
@@ -65,6 +66,7 @@ export default Vue.observable ({
                    title: 'Faculties available at EduPrime',
                    paragraph: "A single university with a load of courses, tailored to satisfy any student's needs.",
                    firstButton: 'Browse through courses',
+                   id: 10,
                 }
             ]
         },
@@ -74,6 +76,7 @@ export default Vue.observable ({
                    title: 'Law Faculty',
                    paragraph: "Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
                    firstButton: 'Read More',
+                   id: 11,
                 }
             ]
         },

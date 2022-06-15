@@ -1,7 +1,7 @@
 <template>
     <div class="card-hero container-xs">
         <h1>{{info.title}}</h1>
-        <p>{{info.paragraph}}</p>
+        <p class="">{{info.paragraph}}</p>
         <button class="btn yellow-btn"><i class="icon fa-solid fa-magnifying-glass"></i>{{info.firstButton}}</button>
         <button class="btn white-btn"><i class="icon fa-solid fa-user-plus"></i>{{info.secondButton}}</button>
     </div>
