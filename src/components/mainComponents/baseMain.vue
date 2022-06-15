@@ -14,14 +14,14 @@ export default {
 <style lang="scss" scoped>
 main {
     background:(var(--color-three));
-    height: 850px;
+    height: 880px;
 }
 .background-container {
     background-image: url('../../assets/reference/img/theme_slider2_bg-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 850px;
+    height: 880px;
     opacity: 0.1;
     position: relative;
 }
@@ -31,7 +31,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 130px;
-    top: 720px;
+    height: 175px;
+    top: 710px;
 }
 </style>
