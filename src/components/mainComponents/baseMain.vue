@@ -16,8 +16,17 @@
                 <h2>Faculties available ad EduPrime</h2>
                     <div class="container-p">
                         <p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
-                    </div>
+                    </div> 
             </div>
+            <div class="carousel-images">
+                    <div class="box-image"></div>
+                    <div class="box-image box-active"></div>
+                    <div class="box-image"></div>
+                    <div class="box-image"></div>
+                    <div class="box-image"></div>
+                    <div class="box-image"></div>
+                    <div class="box-image"></div>
+            </div>  
         </section>
     </main>
 </template>
@@ -69,5 +78,23 @@ export default {
 }
 .second-section p {
     color: var(--gray-seven);
+    margin: 30px 0;
+    line-height: 25px;
+}
+.carousel-images {
+    display: flex;
+}
+.box-image {
+    width: 400px;
+    height: 250px;
+    border: 2px solid var(--gray-eight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-active {
+    background-color: var(--color-two);
+    color: var(--white-one);
+    border: none;
 }
 </style>
