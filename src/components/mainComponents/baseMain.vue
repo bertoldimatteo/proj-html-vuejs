@@ -8,7 +8,7 @@
                 <ul>
                     <li v-for="link in dataShared.links" :key="link.id"><a href="#">{{link.navLink}}<i class="icon fa-solid fa-caret-down"></i></a></li>
                 </ul>
-                <button type="button">VIEW COURSES</button>
+                <button class="btn" type="button">VIEW COURSES</button>
             </div>
         </nav>
         <div class="background-wave"></div>
@@ -71,6 +71,12 @@ li, button {
 }
 a {
     text-decoration: none;
+    color: var(--white-one);
+    font-weight: 500;
+}
+button {
+    font-weight: 600;
+    font-size: var(--font-md)
 }
 .icon {
     margin: 0 5px;
