@@ -19,13 +19,45 @@
                     </div> 
             </div>
             <div class="carousel-images">
-                    <div class="box-image"></div>
-                    <div class="box-image box-active"></div>
-                    <div class="box-image"></div>
-                    <div class="box-image"></div>
-                    <div class="box-image"></div>
-                    <div class="box-image"></div>
-                    <div class="box-image"></div>
+                <div class="box">
+                    </div>
+                    <div class="box box-active">
+                        <div class="box-image">
+                            <img class="image hover-image" src="../../assets/reference/img/Gavel-v2.png" alt="gavel-image">
+                            <p>Law Faculty</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img class="image" src="../../assets/reference/img/Coins-tabs-v2.png" alt="gavel-image">
+                            <p>Economy</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img class="image" src="../../assets/reference/img/Medicine-tabs-v2.png" alt="gavel-image">
+                            <p>Medicine</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img class="image" src="../../assets/reference/img/Computer-tabs-v2.png" alt="gavel-image">
+                            <p>Computer Science</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img class="image" src="../../assets/reference/img/Palette-tabs-v2.png" alt="gavel-image">
+                            <p>Grapich Designs</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="box">
+                </div>
             </div>  
         </section>
     </main>
@@ -83,18 +115,54 @@ export default {
 }
 .carousel-images {
     display: flex;
+    justify-content: center;
 }
-.box-image {
-    width: 400px;
+.box {
+    width: 365px;
     height: 250px;
     border: 2px solid var(--gray-eight);
+}
+.box-image {
+    border: 2px solid var(--gray-eight);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 .box-active {
     background-color: var(--color-two);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-self: center;
+}
+.box p {
+    color: var(--color-two);
+    font-weight: 600;
+    font-size: var(--font-md);
+}
+.box-active p {
     color: var(--white-one);
-    border: none;
+    font-weight: 600;
+    font-size: var(--font-md);
+}
+.box-image .image {
+    margin-top: 50px;
+    width: 110px;
+}
+.box-active .image {
+    margin-top: 30px;
+    width: 110px;
+}
+.hover-image {
+    filter: brightness(0) invert(1);
+}
+.arrow-down {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid var(--color-two);;
+    position: absolute;
+    top: 240px;
 }
 </style>
