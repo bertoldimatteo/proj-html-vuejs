@@ -3,6 +3,7 @@
         <section class="first-section">
             <div class="container-lg">
                 <div class="right-section">
+                    <img class="book-icon" src="../../assets/reference/img/Books-icon.png" alt="books">
                     <Monocard v-for="element in dataShared.data[1].section1" :key="element.id" :info="element"/>
                 </div>
                 <div class="left-section">
@@ -44,14 +45,12 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 200px 0;
-    gap: 50px;
+    gap: 100px;
 }
-.right-section {
-    background-image: url('../../assets/reference/img/Books-icon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+.book-icon {
+    width: 50px;
 }
 .left-section img {
-    width: 530px;
+    width: 480px;
 }
 </style>
