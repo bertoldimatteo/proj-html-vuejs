@@ -70,6 +70,35 @@
         </section>
         <section class="middle-part">
             <div class="wave-bg-top"></div>
+                <section class="middle-section">
+                    <div class="container-lg">
+                        <div class="top-info">
+                            <h2><mark class="highlight">University Year</mark></h2>
+                            <div class="paragraph top-paragraph">
+                                <div class="par-one container-p-nm">
+                                    <h3>Demo Classes</h3>
+                                    <p>In the first week, students try to accomodate with the teaching style and choose their optional courses.</p>
+                                </div>
+                                 <div class="par-two container-p-nm">
+                                    <h3>Graduation Day</h3>
+                                    <p>On the day of graduation, all students gather for the ceremony and then network and party among others.</p>
+                                </div>
+                            </div>
+                            <img src="../../assets/reference/img/Timeline-Item.png" alt="studies-line">
+                            <div class="paragraph bottom-paragraph">
+                                <div class="par-three container-p-nm">
+                                    <h3>Orientation</h3>
+                                    <p>First day of the univerity year, all students gather for the opening ceremony and then network woth others.</p>
+                                </div>
+                                 <div class="par-four container-p-nm">
+                                    <h3>Evaluation</h3>
+                                    <p>At the end of a semester, students take a general evaluation test for every subject they're learning.</p>
+                            </div>
+                        </div>
+                        <div class="bottom-info"></div>
+                        </div>
+                    </div>
+                </section>
             <div class="wave-bg-btm"></div>
         </section>
     </main>
@@ -185,11 +214,34 @@ export default {
 .third-section .right-section img {
     width: 480px;
 }
+.highlight {
+    background-color: var(--color-seven);
+    color: var(--white-one);
+}
+.middle-section h3, h4, p {
+    color: var(--white-one);
+}
+.middle-section .paragraph {
+    display: flex;
+}
+.top-paragraph {
+    justify-content: flex-end;
+    margin-right: 200px ;
+    gap: 110px;
+}
+.bottom-paragraph {
+    margin-left: 200px ;
+    gap: 110px;
+}
 .middle-part {
     margin: 120px 0;
     background-color: var(--color-two);
     height: 800px;
     position: relative;
+    text-align: center;
+}
+.top-info h2 {
+    margin: 100px 0;
 }
 .wave-bg-top {
     position: absolute;
