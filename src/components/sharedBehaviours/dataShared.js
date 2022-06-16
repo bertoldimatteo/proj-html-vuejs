@@ -146,10 +146,5 @@ export default Vue.observable ({
                 paragraph: 'EduPime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.',
                 firstButton: 'List of Fees',
         },
-        section9:
-            {
-                title: 'Partners',
-                paragraph: 'leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy.',
-        },
     }
 })

@@ -318,9 +318,6 @@ export default {
     display: flex;
     padding: 80px 0;
 }
-.lower-part {
-    padding: 100px 0;
-}
 .Latest-courses {
     display: flex;
     justify-content: space-between;
