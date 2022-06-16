@@ -73,6 +73,7 @@
                 <section class="middle-section">
                     <div class="container-lg">
                         <div class="top-info">
+                            <img class="info-image" src="../../assets/reference/img/Clock-and-Bell.png" alt="clico-bell-image">
                             <h2><mark class="highlight">University Year</mark></h2>
                             <div class="paragraph top-paragraph">
                                 <div class="par-one container-p-nm">
@@ -241,14 +242,16 @@ export default {
     text-align: center;
 }
 .top-info h2 {
-    margin: 100px 0;
+    margin: 10px 0 100px 0;
 }
 .wave-bg-top {
     position: absolute;
-    top: -180px;
+    top: -260px;
     width: 100%;
-    height: 180px;
+    height: 260px;
     background-image: url('../../assets/reference/svg/svg-0.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wave-bg-btm {
     position: absolute;
@@ -256,5 +259,8 @@ export default {
     width: 100%;
     height: 150px;
     background-image: url('../../assets/reference/svg/svg-1.svg');
+}
+.info-image {
+    width: 55px;
 }
 </style>
