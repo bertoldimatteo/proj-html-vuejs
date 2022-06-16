@@ -113,7 +113,7 @@
             <div class="container-lg">
                 <h2>Latest Courses</h2>
                 <div class="Latest-courses">
-                    <CoursesCard v-for="element in dataShared.data.section6" :key="element" :info="element"/>
+                    <CoursesCard v-for="element in dataShared.data.section6" :key="element.id" :info="element"/>
                 </div>
             </div>
         </section>
@@ -293,7 +293,8 @@ export default {
 }
 .Latest-courses {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
+    margin: 50px 0;
 }
 </style>
