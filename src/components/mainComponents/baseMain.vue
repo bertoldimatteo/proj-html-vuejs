@@ -68,6 +68,10 @@
                 </div>
             </div>
         </section>
+        <section class="middle-part">
+            <div class="wave-bg-top"></div>
+            <div class="wave-bg-btm"></div>
+        </section>
     </main>
 </template>
 
@@ -180,5 +184,25 @@ export default {
 }
 .third-section .right-section img {
     width: 480px;
+}
+.middle-part {
+    margin: 120px 0;
+    background-color: var(--color-two);
+    height: 800px;
+    position: relative;
+}
+.wave-bg-top {
+    position: absolute;
+    top: -180px;
+    width: 100%;
+    height: 180px;
+    background-image: url('../../assets/reference/svg/svg-0.svg');
+}
+.wave-bg-btm {
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 150px;
+    background-image: url('../../assets/reference/svg/svg-1.svg');
 }
 </style>

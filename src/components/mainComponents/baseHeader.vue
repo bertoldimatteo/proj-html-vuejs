@@ -33,9 +33,6 @@ export default {
     components: {
         CardHero,
     },
-    created() {
-        console.log(dataShared.data[0].hero)
-    }
 }
 </script>
 
