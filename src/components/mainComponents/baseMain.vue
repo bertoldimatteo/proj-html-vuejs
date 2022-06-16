@@ -94,11 +94,18 @@
                                  <div class="par-four container-p-nm">
                                     <h3>Evaluation</h3>
                                     <p>At the end of a semester, students take a general evaluation test for every subject they're learning.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="bottom-info"></div>
-                        </div>
-                    </div>
+                        <div class="bottom-info">
+                            <img class="info-image" src="../../assets/reference/img/upcoming-events-calendar-icon.png" alt="calendar-image">
+                            <h2>Upcoming Events</h2>
+                            <div class="card">
+                                <EventCard v-for="element in dataShared.data[5].section5" :key="element.id" :info="element" />
+                            </div>
+                            <button class="btn yellow-btn" type="button">View All Events</button>
+                        </div> 
+                    </div>     
                 </section>
             <div class="wave-bg-btm"></div>
         </section>
@@ -109,6 +116,7 @@
 import dataShared from '../sharedBehaviours/dataShared.js';
 import MonoCardYBtn from '../blockComponents/MonoCardYBtn.vue';
 import MonoCardRBtn from '../blockComponents/MonoCardRBtn.vue';
+import EventCard from '../blockComponents/EventCard.vue';
 
 export default {
     name: 'baseMain',
@@ -121,6 +129,7 @@ export default {
     components: {
         MonoCardYBtn,
         MonoCardRBtn,
+        EventCard,
     },
 }
 </script>
@@ -219,7 +228,7 @@ export default {
     background-color: var(--color-seven);
     color: var(--white-one);
 }
-.middle-section h3, h4, p {
+.middle-section h2, h3, h4, p {
     color: var(--white-one);
 }
 .middle-section .paragraph {
@@ -236,8 +245,8 @@ export default {
 }
 .middle-part {
     margin: 120px 0;
+    padding: 80px 0;
     background-color: var(--color-two);
-    height: 800px;
     position: relative;
     text-align: center;
 }
@@ -255,12 +264,21 @@ export default {
 }
 .wave-bg-btm {
     position: absolute;
-    bottom: -140px;
+    bottom: -250px;
     width: 100%;
-    height: 150px;
+    height: 260px;
     background-image: url('../../assets/reference/svg/svg-1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottom-info {
+    margin-top: 80px;
 }
 .info-image {
     width: 55px;
+}
+.card {
+    display: flex;
+    padding: 80px 0;
 }
 </style>

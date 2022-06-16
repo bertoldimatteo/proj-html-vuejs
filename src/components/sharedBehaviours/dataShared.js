@@ -106,9 +106,6 @@ export default Vue.observable ({
         {
             section5: [
                 {
-                    mainTitle: 'Upcoming Events',
-                },
-                {
                     title: 'Coaching Sessions',
                     date: '20 May 21:30 PM',
                     paragraph:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]',
@@ -125,9 +122,6 @@ export default Vue.observable ({
                     date: '12 Feb 13:30 PM',
                     paragraph:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]',
                     button: 'Find More', 
-                },
-                {
-                    Button: 'View All Events',
                 },
             ]
         },
