@@ -109,6 +109,14 @@
                 </section>
             <div class="wave-bg-btm"></div>
         </section>
+        <section class="lower.part">
+            <div class="container-lg">
+                <h2>Latest Courses</h2>
+                <div class="Latest-courses">
+
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 

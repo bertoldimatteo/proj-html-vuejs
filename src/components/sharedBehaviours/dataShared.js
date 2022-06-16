@@ -128,9 +128,7 @@ export default Vue.observable ({
         {
             section6: [
                 {
-                    mainTitle: 'Latest Courses',
-                },
-                {
+                    image: '',
                     title: 'Make Better Decisions',
                     teacher: 'James Colins',
                     price:  '$21.00',
