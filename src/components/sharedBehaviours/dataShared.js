@@ -106,25 +106,28 @@ export default Vue.observable ({
         ],
         section6: [
             {
-                image: '',
+                image: '../../assets/reference/img/Decisions-icon.png',
                 title: 'Make Better Decisions',
                 teacher: 'James Colins',
                 price:  '$21.00',
                 button: 'View Course',
             },
-            {
+            {   
+                image: '../../assets/reference/img/Speaker-icon.png',
                 title: 'How to be a speaker',
                 teacher: 'James Colins',
                 price:  'Free',
                 button: 'View Course',
             },
-            {
+            {   
+                image: '../../assets/reference/img/Network-icon.png',
                 title: 'Network Introductions',
                 teacher: 'James Colins',
                 price:  'Free',
                 button: 'View Course',
             },
-            {
+            {   
+                image: '../../assets/reference/img/Brand-icon.png',
                 title: 'Brand Management',
                 teacher: 'James Colins',
                 price:  'Free',

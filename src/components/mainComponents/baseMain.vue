@@ -113,7 +113,7 @@
             <div class="container-lg">
                 <h2>Latest Courses</h2>
                 <div class="Latest-courses">
-
+                    <CoursesCard v-for="element in dataShared.data.section6" :key="element" :info="element"/>
                 </div>
             </div>
         </section>
@@ -125,6 +125,7 @@ import dataShared from '../sharedBehaviours/dataShared.js';
 import MonoCardYBtn from '../blockComponents/MonoCardYBtn.vue';
 import MonoCardRBtn from '../blockComponents/MonoCardRBtn.vue';
 import EventCard from '../blockComponents/EventCard.vue';
+import CoursesCard from '../blockComponents/CoursesCard.vue';
 
 export default {
     name: 'baseMain',
@@ -138,6 +139,7 @@ export default {
         MonoCardYBtn,
         MonoCardRBtn,
         EventCard,
+        CoursesCard,
     },
 }
 </script>
@@ -288,5 +290,10 @@ export default {
 .card {
     display: flex;
     padding: 80px 0;
+}
+.Latest-courses {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 </style>
