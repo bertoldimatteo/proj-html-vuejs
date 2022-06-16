@@ -2,13 +2,13 @@
     <div class="mono-card container-xxs">
         <h2>{{info.title}}</h2>
         <p>{{info.paragraph}}</p>
-        <button class="btn yellow-btn">{{info.firstButton}}</button>
+        <button class="btn red-btn">{{info.firstButton}}</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'MonoCard',
+    name: 'MonoCardRBtn',
     props: {
         info: Object,
     }
