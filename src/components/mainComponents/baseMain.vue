@@ -5,7 +5,7 @@
                 <div class="container-lg">
                     <div class="right-section">
                         <img class="book-icon" src="../../assets/reference/img/Books-icon.png" alt="books">
-                        <MonoCardYBtn v-for="element in dataShared.data[1].section1" :key="element.id" :info="element"/>
+                        <MonoCardYBtn :info="dataShared.data.section1"/>
                     </div>
                     <div class="left-section">
                         <img src="../../assets/reference/img/Graduation-Illustration.png" alt="graduation-image">
@@ -63,7 +63,7 @@
                         <img src="../../assets/reference/img/Gavel-Illustration-e1556884768193.png" alt="graduation-image">
                     </div>
                     <div class="left-section">
-                        <MonoCardRBtn v-for="element in dataShared.data[3].section3" :key="element.id" :info="element"/>
+                        <MonoCardRBtn :info="dataShared.data.section3"/>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                             <img class="info-image" src="../../assets/reference/img/upcoming-events-calendar-icon.png" alt="calendar-image">
                             <h2>Upcoming Events</h2>
                             <div class="card">
-                                <EventCard v-for="element in dataShared.data[5].section5" :key="element.id" :info="element" />
+                                <EventCard v-for="element in dataShared.data.section5" :key="element.id" :info="element" />
                             </div>
                             <button class="btn yellow-btn" type="button">View All Events</button>
                         </div> 

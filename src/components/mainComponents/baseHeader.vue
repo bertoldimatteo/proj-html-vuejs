@@ -12,7 +12,7 @@
             </div>
         </nav>
         <div class="hero">
-            <CardHero v-for="element in dataShared.data[0].hero" :key="element.id" :info="element"/>
+            <CardHero :info="dataShared.data.hero"/>
         </div>
         <div class="background-wave"></div>
     </header>
