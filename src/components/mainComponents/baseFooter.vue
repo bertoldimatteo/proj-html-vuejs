@@ -61,7 +61,7 @@
                         <span><a href="#">LAW</a></span>
                         <span><a href="#">FITNESS</a></span>
                     </div>
-                    <p>ModelTheme. All rights reserved.</p>
+                    <p class="copyright">ModelTheme. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -93,8 +93,14 @@ h5 {
 }
 span {
     font-weight: 300;
-    font-size: var(--font-sm);
-    margin-left: 15px;
+    font-size: var(--font-xs);
+    margin: 10px 0 10px 15px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--white-one);
 }
 li {
     margin: 10px 0;
@@ -126,6 +132,7 @@ li {
 }
 .footer-bottom {
     background-color: var(--color-two);
+    padding: 120px 0 80px 0;
 }
 .footer-container {
     display: flex;
@@ -137,6 +144,9 @@ li {
 }
 .footer-left img {
     width: 300px;
+}
+.footer-left p {
+    line-height: 30px;
 }
 .social-icons {
     display: flex;
@@ -187,5 +197,7 @@ input[type=text] {
     position: absolute;
     right: 550px;
 } 
-
+.copyright {
+    color: var(--color-one);
+}
 </style>
