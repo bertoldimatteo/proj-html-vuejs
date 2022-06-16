@@ -60,7 +60,7 @@
             <div class="third-section">
                  <div class="container-lg">
                     <div class="right-section">
-                        <img src="../../assets/reference/img/Gavel-Illustration-e1556884768193.png" alt="graduation-image">
+                        <img class="imageCard" src="../../assets/reference/img/Gavel-Illustration-e1556884768193.png" alt="graduation-image">
                     </div>
                     <div class="left-section">
                         <MonoCardRBtn :info="dataShared.data.section3"/>
@@ -109,13 +109,40 @@
                 </section>
             <div class="wave-bg-btm"></div>
         </section>
-        <section class="lower.part">
+        <section class="lower-part">
             <div class="container-lg">
-                <h2>Latest Courses</h2>
-                <div class="Latest-courses">
-                    <CoursesCard v-for="element in dataShared.data.section6" :key="element.id" :info="element"/>
+                <div class="section-one">
+                    <h2>Latest Courses</h2>
+                    <div class="Latest-courses">
+                        <CoursesCard v-for="element in dataShared.data.section6" :key="element.id" :info="element"/>
+                    </div>
+                </div>
+                <div class="section-two">
+                    <div class="right-section">
+                        <img class="info-image" src="../../assets/reference/img/Exam-icon.png" alt="exam-icon">
+                        <MonoCardRBtn :info="dataShared.data.section7"/>
+                    </div>
+                    <div class="left-section">
+                        <img class="imageCard" src="../../assets/reference/img/Exam-Illustration.png" alt="graduation-image">
+                    </div>
+                </div>
+                <div class="section-three">
+                    <div class="right-section">
+                        <img class="imageCard" src="../../assets/reference/img/Girl-Illustration.png" alt="graduation-image">
+                    </div>
+                    <div class="left-section">
+                        <MonoCardRBtn :info="dataShared.data.section8"/>
+                    </div>
                 </div>
             </div>
+            <div class="partners-section">
+                    <div class="container-lg partners">
+                        <h3>Subscribe Now to Our Newsletter !</h3>
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Email address..."><button class="icon-form"><i class="fa-solid fa-paper-plane fa-lg"></i></button><br>
+                        </form> 
+                    </div>
+                </div>
         </section>
     </main>
 </template>
@@ -231,8 +258,8 @@ export default {
     position: absolute;
     top: 240px;
 }
-.third-section .right-section img {
-    width: 480px;
+.imageCard {
+    width: 500px;
 }
 .highlight {
     background-color: var(--color-seven);
@@ -291,10 +318,49 @@ export default {
     display: flex;
     padding: 80px 0;
 }
+.lower-part {
+    padding: 100px 0;
+}
 .Latest-courses {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     margin: 50px 0;
 }
+.lower-part .section-two, .lower-part .section-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.partners-section {
+    background-color: var(--color-two);
+}
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.partners h3 {
+    font-size: var(--font-xl);
+}
+input[type=text] {
+    width: 450px;
+    height: 60px;
+    padding: 25px;
+    border: none;
+    border-radius: 35px;
+    position: relative;
+}
+.icon-form {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-one);
+    color: var(--white-one);
+    position: absolute;
+    right: 600px;
+} 
 </style>
