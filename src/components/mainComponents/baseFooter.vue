@@ -109,7 +109,7 @@ li {
 .footer-top {
     background-repeat: no-repeat;
     background-size: contain;
-    height: 750px;
+    height: 600px;
 }
 .partner {
     text-align: center;
@@ -132,7 +132,7 @@ li {
 }
 .footer-bottom {
     background-color: var(--color-two);
-    padding: 120px 0 80px 0;
+    padding: 150px 0 100px 0;
 }
 .footer-container {
     display: flex;
