@@ -48,8 +48,8 @@ header {
     background-size: cover;
     background-position: top;
     height: 880px;
-    position: relative;
     width: 100%;
+    position: relative;
 }
 .left-menu {
     position: absolute;
