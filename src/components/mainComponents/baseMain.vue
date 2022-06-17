@@ -189,6 +189,18 @@ main {
     border-radius: 5px;
     font-size: var(--font-sm);
 }
+.body-banner-left:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px var(--gray-one);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
 .first-section {
     background-image: url('../../assets/reference/img/home-background.png');
     background-repeat: no-repeat;
