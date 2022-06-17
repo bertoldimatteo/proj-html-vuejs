@@ -1,9 +1,14 @@
 <template>
     <footer>
         <div class="button-theme">
-                <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-3.svg" alt="leaf-svg"><a href="#">Purchase Theme</a></button>
-                <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-2.svg" alt="leaf-svg"><a href="#">Related Theme</a></button>
+            <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-3.svg" alt="leaf-svg"><a href="#">Purchase Theme</a></button>
+            <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-2.svg" alt="leaf-svg"><a href="#">Related Theme</a></button>
+        </div>
+        <div class="footer-right-menu">
+            <div class="container-menu">
+                <a href="#"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
             </div>
+        </div>
         <div class="footer-top">
             <div class="container-lg partner">
                 <h2>Partners</h2>
@@ -52,7 +57,7 @@
                     </ul>
                 </div>
                 <div class="footer-right container-p-nm">
-                    <form action="/action_page.php">
+                    <form class="form-footer-right">
                             <input type="text" placeholder="Email address..."><button class="icon-form"><i class="fa-solid fa-paper-plane fa-lg"></i></button><br>
                     </form> 
                     <h5>Search categories</h5>
@@ -87,14 +92,26 @@ footer {
     flex-direction: column;
     position: absolute;
     bottom: 30px;
-    left: 80px;
+    left: 20px;
 }
 .theme-btn a {
     color: var(--gray-ten);
+    font-size: var(--font-xs);
 }
 .theme-btn img {
-    width: 20px;
+    width: 15px;
     margin-right: 10px;
+}
+.container-menu {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-one);
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
 }
 a {
     text-decoration: none;
@@ -200,13 +217,15 @@ li {
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+.form-footer-right {
+    position: relative;
+}
 input[type=text] {
     width: 380px;
     height: 60px;
     padding: 25px;
     border: none;
     border-radius: 35px;
-    position: relative;
 }
 .icon-form {
     width: 60px;
@@ -216,7 +235,7 @@ input[type=text] {
     background-color: var(--color-one);
     color: var(--white-one);
     position: absolute;
-    right: 550px;
+    right: 0;
 } 
 .copyright {
     color: var(--color-one);

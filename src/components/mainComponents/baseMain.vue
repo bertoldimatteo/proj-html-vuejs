@@ -106,7 +106,7 @@
                             <div class="card">
                                 <EventCard v-for="element in dataShared.data.section5" :key="element.id" :info="element" />
                             </div>
-                            <button class="btn yellow-btn" type="button">View All Events</button>
+                            <button class="btn yellow-btn event-btn" type="button">View All Events</button>
                         </div> 
                     </div>     
                 </section>
@@ -141,7 +141,7 @@
             <div class="partners-section">
                     <div class="container-lg partners">
                         <h3>Subscribe Now to Our Newsletter !</h3>
-                        <form action="/action_page.php">
+                        <form class="partner-form">
                             <input type="text" placeholder="Email address..."><button class="icon-form"><i class="fa-solid fa-paper-plane fa-lg"></i></button><br>
                         </form> 
                     </div>
@@ -371,13 +371,15 @@ main {
 .partners h3 {
     font-size: var(--font-xl);
 }
+.partner-form {
+    position: relative;
+}
 input[type=text] {
     width: 450px;
     height: 60px;
     padding: 25px;
     border: none;
     border-radius: 35px;
-    position: relative;
 }
 .icon-form {
     width: 60px;
@@ -387,6 +389,6 @@ input[type=text] {
     background-color: var(--color-one);
     color: var(--white-one);
     position: absolute;
-    right: 600px;
+    right: 0;
 } 
 </style>

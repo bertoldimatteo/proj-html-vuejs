@@ -51,6 +51,7 @@ export default Vue.observable ({
                 title: 'Thousands of courses for any type of student',
                 paragraph: "At EduPrime, it doesn't matter what domain you wish to pursue a carrer in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.",
                 firstButton: 'Browse through courses',
+                hover: 'red-hover',
         },
         section2:
             {
@@ -145,6 +146,7 @@ export default Vue.observable ({
                 title: 'Variable fees for international students',
                 paragraph: 'EduPime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.',
                 firstButton: 'List of Fees',
+                hover: 'yellow-hover',
         },
     }
 })

@@ -13,7 +13,7 @@
                 <ul>
                     <li v-for="link in dataShared.links" :key="link.id"><a href="#">{{link.navLink}}<i class="icon fa-solid fa-caret-down" :class="{'multiLink' : link.status === 'multiLink', 'monoLink' : link.status === 'monoLink'}"></i></a></li>
                 </ul>
-                <button class="btn" type="button">VIEW COURSES</button>
+                <button class="btn navbar-btn" type="button">VIEW COURSES</button>
             </div>
         </nav>
         <div class="hero">

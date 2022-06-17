@@ -2,7 +2,7 @@
     <div class="mono-card container-xxs">
         <h2>{{info.title}}</h2>
         <p>{{info.paragraph}}</p>
-        <button class="btn red-btn">{{info.firstButton}}</button>
+        <button class="btn red-btn" :class="{'yellow-hover' : info.hover === 'yellow-hover', 'red-hover' : info.hover === 'red-hover',}">{{info.firstButton}}</button>
     </div>
 </template>
 
