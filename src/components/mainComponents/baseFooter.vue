@@ -132,7 +132,7 @@ li {
 }
 .footer-bottom {
     background-color: var(--color-two);
-    padding: 150px 0 100px 0;
+    padding: 200px 0 100px 0;
 }
 .footer-container {
     display: flex;

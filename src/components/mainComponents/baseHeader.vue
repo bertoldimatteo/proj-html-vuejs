@@ -1,5 +1,10 @@
 <template>
     <header>
+        <div class="left-menu">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-book-open"></i></a>
+            <a href="#"><i class="fa-regular fa-life-ring"></i></a>
+        </div>
         <nav>
             <div class="left-navbar">
                 <img src="../../assets/reference/img/theme_eduprime_logo.png" alt="">
@@ -45,6 +50,21 @@ header {
     height: 880px;
     position: relative;
     width: 100%;
+}
+.left-menu {
+    position: absolute;
+    top: 280px;
+    background-color: var(--color-one);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 5px 50px #444444;
+}
+.left-menu > * {
+    margin: 6px 0;
+    color: var(--white-one);
 }
 nav {
     padding: 50px;
