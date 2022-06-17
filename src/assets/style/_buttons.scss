@@ -17,3 +17,15 @@
     color: var(--color-two);
     font-weight: 800;
 }
+.theme-btn {
+    background-color: var(--gray-six);
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 5px -1px #555555;
+}

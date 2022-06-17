@@ -1,5 +1,9 @@
 <template>
     <footer>
+        <div class="button-theme">
+                <button class="theme-btn" type="button"><a href="#">Purchase Theme</a></button>
+                <button class="theme-btn" type="button"><a href="#">Related Theme</a></button>
+            </div>
         <div class="footer-top">
             <div class="container-lg partner">
                 <h2>Partners</h2>
@@ -75,6 +79,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+footer {
+    position: relative;
+}
+.button-theme {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+}
+.theme-btn a {
+    color: var(--gray-ten);
+}
 a {
     text-decoration: none;
 }
