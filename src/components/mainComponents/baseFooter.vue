@@ -1,8 +1,8 @@
 <template>
     <footer>
         <div class="button-theme">
-                <button class="theme-btn" type="button"><a href="#">Purchase Theme</a></button>
-                <button class="theme-btn" type="button"><a href="#">Related Theme</a></button>
+                <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-3.svg" alt="leaf-svg"><a href="#">Purchase Theme</a></button>
+                <button class="theme-btn" type="button"><img src="../../assets/reference/svg/svg-2.svg" alt="leaf-svg"><a href="#">Related Theme</a></button>
             </div>
         <div class="footer-top">
             <div class="container-lg partner">
@@ -91,6 +91,10 @@ footer {
 }
 .theme-btn a {
     color: var(--gray-ten);
+}
+.theme-btn img {
+    width: 20px;
+    margin-right: 10px;
 }
 a {
     text-decoration: none;
