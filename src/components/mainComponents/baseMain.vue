@@ -23,11 +23,11 @@
                         </div> 
                 </div>
                 <div class="carousel-images">
-                    <div class="box">
+                        <div class="box-empty">
                         </div>
-                        <div class="box box-active">
+                        <div class="box">
                             <div class="box-image">
-                                <img class="image hover-image" src="../../assets/reference/img/Gavel-v2.png" alt="gavel-image">
+                                <img class="image" src="../../assets/reference/img/Gavel-v2.png" alt="gavel-image">
                                 <p>Law Faculty</p>
                             </div>
                             <div class="arrow-down"></div>
@@ -56,8 +56,8 @@
                                 <p>Grapich Designs</p>
                             </div>
                         </div>
-                        <div class="box">
-                    </div>
+                        <div class="box-empty">
+                        </div>
                 </div>  
             </section>
             <div class="third-section">
@@ -239,10 +239,11 @@ main {
     display: flex;
     justify-content: center;
 }
-.box {
+.box, .box-empty {
     width: 365px;
     height: 250px;
     border: 2px solid var(--gray-eight);
+    position: relative;
 }
 .box-image {
     border: 2px solid var(--gray-eight);
@@ -252,20 +253,8 @@ main {
     justify-content: center;
     border: none;
 }
-.box-active {
-    background-color: var(--color-two);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-self: center;
-}
 .box p {
     color: var(--color-two);
-    font-weight: 600;
-    font-size: var(--font-md);
-}
-.box-active p {
-    color: var(--white-one);
     font-weight: 600;
     font-size: var(--font-md);
 }
@@ -276,16 +265,6 @@ main {
 .second-section .box-active .image {
     margin-top: 30px;
     width: 110px;
-}
-.second-section .hover-image {
-    filter: brightness(0) invert(1);
-}
-.second-section .arrow-down {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid var(--color-two);;
-    position: absolute;
-    top: 240px;
 }
 .imageCard {
     width: 500px;

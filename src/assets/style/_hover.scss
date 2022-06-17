@@ -16,3 +16,22 @@
 .li-navbar a:hover {
     color: var(--color-one);
 }
+.carousel-images .box:hover {
+    background-color: var(--color-two);
+    border: none;
+}
+.carousel-images .box-image:hover > * {
+    filter: brightness(0) invert(1);
+}
+.carousel-images .box:hover::after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    border-top: solid 20px var(--color-two);
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
+}
