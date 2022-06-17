@@ -1,5 +1,8 @@
 <template>
     <main>
+        <div class="body-banner-left">
+            <p>Purchase Eduprime on Envato Market</p>
+        </div>
         <section class="Upper-part">
             <section class="first-section">
                 <div class="container-lg">
@@ -172,6 +175,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+main {
+    position: relative;
+}
+.body-banner-left {
+    background-color: var(--gray-one);
+    max-width: 230px;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    top: -20px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: var(--font-sm);
+}
 .first-section {
     background-image: url('../../assets/reference/img/home-background.png');
     background-repeat: no-repeat;
