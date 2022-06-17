@@ -194,12 +194,12 @@ main {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -8px;
     width: 0;
     height: 0;
-    border-top: solid 10px var(--gray-one);
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
+    border-top: solid 8px var(--gray-one);
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
 }
 .first-section {
     background-image: url('../../assets/reference/img/home-background.png');
