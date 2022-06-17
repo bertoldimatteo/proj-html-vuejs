@@ -282,11 +282,13 @@ main {
 .top-paragraph {
     justify-content: flex-end;
     margin-right: 200px ;
-    gap: 110px;
+    gap: 60px;
+    margin-bottom: 10px;
 }
 .bottom-paragraph {
     margin-left: 200px ;
-    gap: 110px;
+    margin-top: 10px;
+    gap: 60px;
 }
 .middle-part {
     margin: 120px 0;
@@ -336,7 +338,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .partners-section {
     background-color: var(--color-two);
@@ -345,7 +347,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0;
 }
 .partners h3 {
     font-size: var(--font-xl);
